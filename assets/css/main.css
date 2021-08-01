@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
+
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+#dynamic-progress {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    margin: 0px auto;
+    border-left: 2px solid#fff;
+    border-right: 2px solid#fff;
+}
+
+#dynamic-progress .progress{
+    border-radius: 12px;
+    background-color: #d35400;
+}
+
+.image-container {
+    padding: 0px;
+    border: 2px solid #fff;
+    border-bottom: 0px;
+}
+
+.image {
+    background: url("../images/bg-image.jpg") no-repeat 0 0 ;
+    background-size: cover;
+    position: relative;
+}
+
+.image .hello > * {
+    z-index: 10;
+    position: relative;
+}
+
+.image .hello::after{
+    content: "";
+    background:rgba(53, 59, 72, 0.4);
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.image .hello {
+    width: 100%;
+    font-size: 5rem;
+    margin: 0px auto;
+    /* padding: 20px 50px; */
+    background: rgba(53, 59, 72, 0.7);
+}
+#quote {
+    font-size: 2.5rem;
+}
+
+.resume-container {
+    border: 2px solid #fff;
+}
+
+.left-resume {
+    background-color: #353b48;
+    border-right: 2px solid #fff;
+}
+
+.picture {
+    text-align: center;
+}
+
+.picture img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+/* Hover Image Effect Start*/
+.box{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .box .box-pic{
+    position: relative;
+    transform-origin: 73% 52% 0;
+    transition: all 0.5s;
+    z-index: 1;
+  }
+  .box .box-pic:after{
+    content: "";
+    position: absolute;
+    top:50%;
+    left: 72%;
+    width: 8px;
+    height: 8px;
+    background: #000;
+    border-radius: 50%;
+  }
+  .box .box-pic img{
+    border-radius: 50%;
+  }
+  .box:hover .box-pic{
+    transform: rotate(-140deg);
+  
+  }
+  .box .box-content{
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 50%;
+    height: 100%;
+    background: brown;
+    border-radius: 50%;
+    padding: 0px 0px;
+    margin: 0% 25%;
+    box-sizing: border-box;
+  }
+
+  .box-content h6 {
+    margin: 20% 0% 0% 0%;
+  }
+  .box-content p {
+      font-size: 12px;
+      margin: 1rem 0;
+  }
+/* Hover Image Effect End */
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    margin: 12px 0px;
+}
+
+p.email, p.phone, .details .address{
+    font-size: 14px;
+}
+
+.details .address::before {
+    content: "\f2b9";
+}
+
+.details p.phone::before{
+    content: "\f879";
+}
+
+.details p.email::before{
+    content: "\f1fa";
+}
+
+.details p.email::before, .details p.phone::before, .details .address::before{
+    font-family: FontAwesome;
+    font-size: 18px;
+    padding-right: 16px;
+}
+div strong+span {
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+    display: block;
+    margin: 2px 0px;
+    font-weight: 500;
+}
+/* 
+.skills ul, #project {
+    padding: 0px 5px;
+    margin: 0px;
+    list-style: none;
+}
+
+.skills ul li{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills ul li p {
+    width: 70%;
+    font-size: 16px;
+    font-weight: 500;
+    padding-right: 16px;
+} */
+
+.progress-bar {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(37 41 45 / 98%);
+    position: relative;
+    border-radius: 12px;
+}
+
+.progress {
+    position: absolute;
+    left: 0;
+    border-radius: 12px;
+}
+
+.underline::after {
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: #fff;
+    margin: 10px auto;
+    display: block;
+}
+
+.company p, .edu p {
+    margin: 0px 0px 5px 0px;
+}
+
+p.company {
+    font-size: 24px;
+}
+
+p.duration {
+    font-size: 18px;
+}
+
+#res {
+    list-style: none;
+}
+
+#res li::before, .activities ul li p::before {
+    content: "\f101";
+}
+
+#res li::before, #res .sub-res li::before, .activities ul li p::before {
+    font-family: FontAwesome;
+    font-size: 12px;
+    padding-right: 10px;
+    color: #fff;
+}
+
+#res .sub-res li {
+    list-style: none;
+}
+
+#res .sub-res li::before {
+    content: "\f111";
+}
+
+.footer-image {
+    background: url("../images/footer-image.jpg") no-repeat 0 0;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+
+.footer-image > * {
+    z-index: 10;
+    position: relative;
+}
+
+.footer-image::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background:rgba(53, 59, 72, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#w-icon, .projects ul, .activities ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#w-icon li a i {
+    font-size: 36px;
+    padding: 0px 16px;
+    color: #fff;
+}
+
+#w-icon li a i:hover {
+    color: black;
+}
+
+/* .projects ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+} */
+
+.project-box ul li> .title {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+@media (max-width: 992px) {
+
+    .box-content, .box .box-pic:after {
+        display: none;
+    }
+
+    #quote {
+        font-size: 36px;
+        padding-bottom: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .objective {
+        margin-top: 10px;
+    }
+    
+    #skills{
+        padding: 20px 10px;
+    }
+    
+    .right-resume {
+        border-top: 3px solid #fff;
+    }
+    .project-box ul li> .title, .project-box ul li> .title {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 576px) {    
+    .hello p:first-child{
+        font-size: 3rem;        
+    }
+    
+    h2.underline, .company p.company, .edu .company,#quote {
+        font-size: 23px;
+    }
+    #hobby-widget {
+        justify-content: space-between;
+    }
+}
